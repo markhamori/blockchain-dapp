@@ -5,6 +5,8 @@ import { contractABI, contractAddress } from "../utils/constants";
 
 export const TransactionContext = React.createContext();
 
+// Destruct the ethereum object from window object
+// Ethereum object is there if MetaMask already installed as a plugin in the browser
 const { ethereum } = window;
 
 const getEthereumContract = () => {
