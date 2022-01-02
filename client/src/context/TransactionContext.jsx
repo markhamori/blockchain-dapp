@@ -3,6 +3,8 @@ import { ethers } from "ethers";
 
 import { contractABI, contractAddress } from "../utils/constants";
 
+// Handle the connection between transactions.sol and react. Using react context.
+
 export const TransactionContext = React.createContext();
 
 // Destruct the ethereum object from window object
